@@ -1,17 +1,18 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>expaid</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <h2>¥100,000</h2>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    収入/月
   </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <form action="cgi-bin/formmail.cgi" method="post">
+    <p>月収を入力してください</p>
+    <input type="number" name="income" min="1" max="999999999"><br>
+    <input type="submit" value="送信">
+    <input type="reset" value="リセット">
+  </form>
 </ion-content>
